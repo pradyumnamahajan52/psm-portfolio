@@ -34,6 +34,19 @@ back in sync.
   responsive QA — need a real browser.
 - Deployment itself; user content (Google Form URL, screenshots, WhatsApp decision).
 
+## Full plan audit (user asked to cross-verify after the build session was lost)
+
+Checked every plan deliverable against disk — all present and correct:
+sections (all 8, planned order), Navbar (mobile menu + hash links + resume download),
+prev/next on ProjectDetail, `useGithubRepos` exactly per spec (6h TTL, fork filter,
+star/recency sort, slim cache, fallback shape matches), 6 projects / 4 featured /
+slugs match `public/projects/` folders, sitemap lists all 8 URLs, OG + canonical +
+twitter meta, reduced-motion honored in 5 places, theme via Tailwind v4 `@theme`,
+all 11 decisions in `docs/decisions.md`, Contact hides the Google-Form button while
+`googleFormUrl` is empty. Only deviation from plan wording: profile/skills/experience/
+services admin editors are validated raw-JSON editors rather than field-level forms
+(projects has the full form + image upload). Functional; documented in README.
+
 ## Lesson recorded
 
 The building session violated the working agreement (no state.md update, no response
