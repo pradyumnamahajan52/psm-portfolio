@@ -1,0 +1,26 @@
+[
+  {
+    "icon": "globe",
+    "title": "Web App Development",
+    "description": "Modern, responsive web applications built with React — fast, mobile-friendly and easy to maintain.",
+    "points": ["Business websites & dashboards", "Single-page applications", "Performance-first builds"]
+  },
+  {
+    "icon": "smartphone",
+    "title": "Mobile Apps (React Native)",
+    "description": "Android apps from a single React Native codebase — I've shipped client apps to real users.",
+    "points": ["Cross-platform from one codebase", "Native look & feel", "Play Store deployment"]
+  },
+  {
+    "icon": "cart",
+    "title": "E-commerce & Payments",
+    "description": "Online stores with secure payment integration — I've launched and operated my own store, so I know what running one takes.",
+    "points": ["Razorpay / payment gateway integration", "Product, order & inventory management", "Launched myntome.com myself"]
+  },
+  {
+    "icon": "server",
+    "title": "APIs & Backend",
+    "description": "Secure REST APIs with Django or Spring Boot, backed by MySQL — authentication, roles and clean architecture included.",
+    "points": ["REST API design", "JWT auth & role-based access", "Deployment on budget hosting"]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "group": "Languages",
+    "items": ["Python", "JavaScript", "Java", "C", "C++"]
+  },
+  {
+    "group": "Frontend",
+    "items": ["React.js", "React Native", "Redux", "HTML", "CSS", "Tailwind CSS", "Bootstrap"]
+  },
+  {
+    "group": "Backend",
+    "items": ["Django", "Spring Boot", "Flask", "REST APIs", "JWT"]
+  },
+  {
+    "group": "Database & Cloud",
+    "items": ["MySQL", "AWS", "Docker"]
+  },
+  {
+    "group": "Tools & Platforms",
+    "items": ["Git", "Linux", "Electron.js", "Vite"]
+  },
+  {
+    "group": "Concepts",
+    "items": ["OOP", "Data Structures & Algorithms", "Microservices"]
+  }
+]

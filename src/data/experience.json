@@ -1,0 +1,42 @@
+[
+  {
+    "type": "work",
+    "title": "Associate Software Developer",
+    "org": "DeccanLogic",
+    "location": "Pune, India",
+    "period": "Mar 2025 — Present",
+    "points": [
+      "Developing responsive frontends with React.js and React Native across web and mobile.",
+      "Implementing component-driven architecture with reusable UI components.",
+      "Optimizing performance with lazy loading, code splitting and Redux state management."
+    ]
+  },
+  {
+    "type": "work",
+    "title": "Freelance Full-Stack Developer",
+    "org": "Self-employed",
+    "location": "Remote",
+    "period": "2020 — Present",
+    "points": [
+      "Built websites and Android apps for clients using React, React Native and Django.",
+      "Launched myntome.com, an online footwear store, and operated it end to end.",
+      "Integrated payment gateways (Razorpay) and deployed on budget hosting."
+    ]
+  },
+  {
+    "type": "education",
+    "title": "PG-DAC (Post Graduate Diploma in Advanced Computing)",
+    "org": "C-DAC ACTS, Pune",
+    "location": "Pune, India",
+    "period": "Aug 2024 — Feb 2025",
+    "points": []
+  },
+  {
+    "type": "education",
+    "title": "BTech in Information Technology",
+    "org": "Government Engineering College, Aurangabad",
+    "location": "Aurangabad, India",
+    "period": "2018 — 2022",
+    "points": ["Scored 69.89%"]
+  }
+]

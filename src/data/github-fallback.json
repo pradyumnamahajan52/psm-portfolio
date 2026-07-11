@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Crime-Reporting-Project",
+    "html_url": "https://github.com/pradyumnamahajan52/Crime-Reporting-Project",
+    "description": "Crime Reporting System is built with React.js & Tailwind CSS for the frontend and Spring Boot REST API for the backend, following SOLID principles. Security is ensured through Spring Security, JWT authentication, and OTP-based login. It uses MySQL for data storage and AWS cloud for managing crime evidence.",
+    "language": "JavaScript",
+    "stargazers_count": 8,
+    "topics": [],
+    "homepage": "https://crimereport.live",
+    "pushed_at": "2025-12-01T16:23:29Z"
+  },
+  {
+    "name": "Learn_360",
+    "html_url": "https://github.com/pradyumnamahajan52/Learn_360",
+    "description": null,
+    "language": "JavaScript",
+    "stargazers_count": 3,
+    "topics": [],
+    "homepage": "",
+    "pushed_at": "2022-02-09T14:33:01Z"
+  },
+  {
+    "name": "tic-tac-toe",
+    "html_url": "https://github.com/pradyumnamahajan52/tic-tac-toe",
+    "description": "This game is also called as \u201cRight and Wrong\u201d or \u201cTik-Tak\u201d or \u201cHash & Star\u201d. The main objective of this project using C++ and graphics",
+    "language": "C++",
+    "stargazers_count": 1,
+    "topics": [
+      "c",
+      "cpp",
+      "graphics"
+    ],
+    "homepage": "https://github.com/pradyumnamahajan52/tic-tac-toe",
+    "pushed_at": "2020-09-14T15:04:27Z"
+  },
+  {
+    "name": "Covid-Tracker",
+    "html_url": "https://github.com/pradyumnamahajan52/Covid-Tracker",
+    "description": "This Site is completely based on reactjs. And api is used from  https://disease.sh/",
+    "language": "JavaScript",
+    "stargazers_count": 1,
+    "topics": [
+      "reactjs"
+    ],
+    "homepage": "",
+    "pushed_at": "2021-01-14T14:50:47Z"
+  },
+  {
+    "name": "myntome.com",
+    "html_url": "https://github.com/pradyumnamahajan52/myntome.com",
+    "description": null,
+    "language": null,
+    "stargazers_count": 1,
+    "topics": [],
+    "homepage": "",
+    "pushed_at": "2021-01-17T15:38:01Z"
+  },
+  {
+    "name": "Blog-Website-Flask-Framework",
+    "html_url": "https://github.com/pradyumnamahajan52/Blog-Website-Flask-Framework",
+    "description": null,
+    "language": "HTML",
+    "stargazers_count": 1,
+    "topics": [],
+    "homepage": "",
+    "pushed_at": "2021-01-17T16:09:29Z"
+  },
+  {
+    "name": "bookbroker",
+    "html_url": "https://github.com/pradyumnamahajan52/bookbroker",
+    "description": "This website is based on django as backend and reactjs frontend.",
+    "language": "JavaScript",
+    "stargazers_count": 1,
+    "topics": [
+      "django-rest-framework",
+      "python3",
+      "reactjs"
+    ],
+    "homepage": "",
+    "pushed_at": "2024-12-12T16:29:59Z"
+  },
+  {
+    "name": "pradyumnamahajan52",
+    "html_url": "https://github.com/pradyumnamahajan52/pradyumnamahajan52",
+    "description": null,
+    "language": null,
+    "stargazers_count": 1,
+    "topics": [],
+    "homepage": "",
+    "pushed_at": "2025-03-03T05:22:44Z"
+  },
+  {
+    "name": "test",
+    "html_url": "https://github.com/pradyumnamahajan52/test",
+    "description": null,
+    "language": null,
+    "stargazers_count": 0,
+    "topics": [],
+    "homepage": "",
+    "pushed_at": "2021-06-28T09:16:03Z"
+  },
+  {
+    "name": "winelectronupdate",
+    "html_url": "https://github.com/pradyumnamahajan52/winelectronupdate",
+    "description": null,
+    "language": null,
+    "stargazers_count": 0,
+    "topics": [],
+    "homepage": "",
+    "pushed_at": "2022-04-05T16:46:47Z"
+  },
+  {
+    "name": "Clinc",
+    "html_url": "https://github.com/pradyumnamahajan52/Clinc",
+    "description": null,
+    "language": null,
+    "stargazers_count": 0,
+    "topics": [],
+    "homepage": "",
+    "pushed_at": "2022-04-14T05:37:37Z"
+  },
+  {
+    "name": "prerna-eye-care",
+    "html_url": "https://github.com/pradyumnamahajan52/prerna-eye-care",
+    "description": null,
+    "language": null,
+    "stargazers_count": 0,
+    "topics": [],
+    "homepage": "",
+    "pushed_at": "2022-05-31T17:12:51Z"
+  },
+  {
+    "name": "PizzaHackathon",
+    "html_url": "https://github.com/pradyumnamahajan52/PizzaHackathon",
+    "description": "OnlinePizzaHackathon. My College Hackthon Project i.e PizzaBite",
+    "language": "Java",
+    "stargazers_count": 0,
+    "topics": [],
+    "homepage": "",
+    "pushed_at": "2024-11-08T01:27:05Z"
+  },
+  {
+    "name": "hello-react-1",
+    "html_url": "https://github.com/pradyumnamahajan52/hello-react-1",
+    "description": null,
+    "language": "HTML",
+    "stargazers_count": 0,
+    "topics": [],
+    "homepage": "",
+    "pushed_at": "2024-12-17T13:19:48Z"
+  },
+  {
+    "name": "money-mentor",
+    "html_url": "https://github.com/pradyumnamahajan52/money-mentor",
+    "description": null,
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "topics": [],
+    "homepage": "",
+    "pushed_at": "2025-02-16T16:05:24Z"
+  },
+  {
+    "name": "BookShopDotNet",
+    "html_url": "https://github.com/pradyumnamahajan52/BookShopDotNet",
+    "description": "MS .net Lab Exam Solution",
+    "language": "C#",
+    "stargazers_count": 0,
+    "topics": [],
+    "homepage": "",
+    "pushed_at": "2025-02-21T08:49:42Z"
+  },
+  {
+    "name": "PSMBooksDot",
+    "html_url": "https://github.com/pradyumnamahajan52/PSMBooksDot",
+    "description": null,
+    "language": "C#",
+    "stargazers_count": 0,
+    "topics": [],
+    "homepage": "",
+    "pushed_at": "2025-02-21T10:31:03Z"
+  }
+]

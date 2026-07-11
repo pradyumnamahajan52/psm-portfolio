@@ -1,0 +1,118 @@
+[
+  {
+    "slug": "crime-reporting-system",
+    "title": "Crime Reporting System",
+    "rank": 1,
+    "featured": true,
+    "tech": ["React.js", "Tailwind CSS", "Spring Boot", "MySQL", "AWS S3", "JWT"],
+    "summary": "A full-stack platform where citizens report crimes online, with separate portals for citizens, police and admins.",
+    "description": "A complete civic-tech platform that lets citizens file crime reports online instead of visiting a police station. The system has three role-based portals — Citizens file and track reports, Police manage and act on cases, and Admins oversee the whole system. Security was the core challenge: the backend is a Spring Boot REST API following SOLID principles, protected with Spring Security, JWT authentication and OTP-based login. Evidence files (photos, documents) are uploaded to AWS S3, and all records live in a normalized MySQL database.",
+    "highlights": [
+      "Role-based access control for three user types (Citizen / Police / Admin)",
+      "JWT authentication plus OTP-based login flow",
+      "Evidence storage on AWS S3 with secure upload handling",
+      "Spring Boot REST API designed around SOLID principles",
+      "Modern responsive UI in React.js + Tailwind CSS"
+    ],
+    "images": ["/projects/crime-reporting-system/cover.svg"],
+    "liveUrl": "",
+    "repoUrl": "https://github.com/pradyumnamahajan52/Crime-Reporting-Project",
+    "role": "Full Stack Developer",
+    "duration": "1 Month"
+  },
+  {
+    "slug": "money-mentor",
+    "title": "Money Mentor",
+    "rank": 2,
+    "featured": true,
+    "tech": ["Electron.js", "React.js", "Django REST", "MySQL", "Python"],
+    "summary": "A cross-platform desktop app for personal money management, packaged for production with Electron.",
+    "description": "A desktop money-management application that runs on Windows, macOS and Linux. The UI is built with React.js running inside Electron.js, talking to a Django REST Framework backend with MySQL for secure storage of financial data. The backend was deployed on shared hosting and the desktop app was packaged for production using Electron Builder — a real exercise in shipping software to end users, not just writing it.",
+    "highlights": [
+      "Cross-platform desktop app: one React codebase for all OSes",
+      "Django REST Framework backend with MySQL",
+      "Production packaging and auto-update setup with Electron Builder",
+      "Backend deployed and operated on shared hosting"
+    ],
+    "images": ["/projects/money-mentor/cover.svg"],
+    "liveUrl": "",
+    "repoUrl": "https://github.com/pradyumnamahajan52/money-mentor",
+    "role": "Full Stack Developer",
+    "duration": "6 Months"
+  },
+  {
+    "slug": "bookbroker",
+    "title": "BookBroker",
+    "rank": 3,
+    "featured": true,
+    "tech": ["Django REST", "React.js", "Bootstrap", "MySQL", "Razorpay"],
+    "summary": "An API-driven e-commerce platform for buying and selling books, with integrated online payments.",
+    "description": "A fully API-driven e-commerce platform for book selling. The backend is Django REST Framework exposing clean JSON APIs consumed by a React.js + Bootstrap frontend. The Razorpay payment gateway is integrated for secure online transactions, and MySQL manages users, orders and inventory. Deployed on shared hosting — proof that a well-built stack doesn't need expensive infrastructure.",
+    "highlights": [
+      "Razorpay payment gateway integration for real transactions",
+      "Fully decoupled architecture: Django REST APIs + React SPA",
+      "Order, inventory and user management in MySQL",
+      "Deployed and run on budget shared hosting"
+    ],
+    "images": ["/projects/bookbroker/cover.svg"],
+    "liveUrl": "",
+    "repoUrl": "https://github.com/pradyumnamahajan52/bookbroker",
+    "role": "Full Stack Developer",
+    "duration": "3 Months"
+  },
+  {
+    "slug": "myntome",
+    "title": "myntome.com",
+    "rank": 4,
+    "featured": true,
+    "tech": ["E-commerce", "Web Development", "Deployment"],
+    "summary": "A live online footwear store, independently developed, launched and operated since August 2020.",
+    "description": "An online footwear e-commerce store launched in August 2020, developed and deployed independently with a friend. This was a real business, not a class project: product catalog, orders, and the full operational side of keeping an online store running. It's where I learned what shipping to real customers actually means — uptime, performance on cheap hosting, and iterating based on user behaviour.",
+    "highlights": [
+      "Launched and operated a real e-commerce business",
+      "End-to-end ownership: development, deployment, operations",
+      "Built for real customers on a startup budget"
+    ],
+    "images": ["/projects/myntome/cover.svg"],
+    "liveUrl": "",
+    "repoUrl": "https://github.com/pradyumnamahajan52/myntome.com",
+    "role": "Co-founder & Developer",
+    "duration": "Ongoing since Aug 2020"
+  },
+  {
+    "slug": "covid-tracker",
+    "title": "Covid Tracker",
+    "rank": 5,
+    "featured": false,
+    "tech": ["React.js", "REST API", "Charts"],
+    "summary": "A React dashboard tracking live COVID-19 statistics from the disease.sh public API.",
+    "description": "A data dashboard built entirely in React.js that visualises live COVID-19 statistics fetched from the public disease.sh API. A compact project that demonstrates working with third-party REST APIs, async data loading states, and presenting live data clearly.",
+    "highlights": [
+      "Live third-party API integration with loading/error states",
+      "Clean data presentation in React"
+    ],
+    "images": ["/projects/covid-tracker/cover.svg"],
+    "liveUrl": "",
+    "repoUrl": "https://github.com/pradyumnamahajan52/Covid-Tracker",
+    "role": "Frontend Developer",
+    "duration": "Short project"
+  },
+  {
+    "slug": "pizza-hackathon",
+    "title": "PizzaBite — Hackathon Project",
+    "rank": 6,
+    "featured": false,
+    "tech": ["Java", "Web"],
+    "summary": "An online pizza-ordering system built under hackathon time pressure at college.",
+    "description": "PizzaBite is an online pizza ordering system built in Java during a college hackathon. Working against the clock with a team, we designed and shipped a working ordering flow — a good showcase of building under pressure and dividing work across a team.",
+    "highlights": [
+      "Built and demoed within hackathon time constraints",
+      "Team collaboration under deadline pressure"
+    ],
+    "images": ["/projects/pizza-hackathon/cover.svg"],
+    "liveUrl": "",
+    "repoUrl": "https://github.com/pradyumnamahajan52/PizzaHackathon",
+    "role": "Developer",
+    "duration": "Hackathon"
+  }
+]

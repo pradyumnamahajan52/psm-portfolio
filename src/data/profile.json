@@ -1,0 +1,29 @@
+{
+  "name": "Pradyumna Mahajan",
+  "shortName": "PM",
+  "role": "Full Stack Developer",
+  "roles": [
+    "Full Stack Developer",
+    "React & React Native Developer",
+    "Freelance Web Developer",
+    "Backend Developer (Django / Spring Boot)"
+  ],
+  "tagline": "I build fast, modern web and mobile apps — from pixel-perfect frontends to secure, scalable backends.",
+  "bio": "I'm a full stack developer at DeccanLogic, Pune, where I build responsive web and mobile interfaces with React.js and React Native. Alongside my full-time role, I take on freelance projects — I've shipped e-commerce stores, desktop apps, and Android apps end to end. My backend toolkit spans Django, Spring Boot and Flask, and I care about performance: lazy loading, code splitting, and clean component architecture are my defaults, not afterthoughts.",
+  "location": "Pune / Latur, Maharashtra, India",
+  "email": "pradyumnamahajan52@gmail.com",
+  "githubUsername": "pradyumnamahajan52",
+  "social": {
+    "github": "https://github.com/pradyumnamahajan52",
+    "linkedin": "https://linkedin.com/in/pradyumnamahajan52",
+    "twitter": "https://twitter.com/pradyumna_52"
+  },
+  "googleFormUrl": "",
+  "resumeUrl": "/resume/Pradyumna_Mahajan_Resume.pdf",
+  "openTo": ["Freelance projects", "Full-time opportunities"],
+  "stats": [
+    { "value": "3+", "label": "Years building software" },
+    { "value": "10+", "label": "Projects shipped" },
+    { "value": "2", "label": "Live products launched" }
+  ]
+}
