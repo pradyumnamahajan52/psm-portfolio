@@ -8,10 +8,10 @@ export default function ProjectCard({ project }) {
     <motion.article
       whileHover={{ y: -6 }}
       transition={{ duration: 0.25 }}
-      className="group relative overflow-hidden rounded-xl border border-line bg-surface transition-colors hover:border-accent/60 hover:shadow-[0_0_30px_rgba(139,92,246,0.15)]"
+      className="group relative h-full overflow-hidden rounded-xl border border-line bg-surface transition-colors hover:border-accent/60 hover:shadow-[0_0_30px_rgba(139,92,246,0.15)]"
     >
-      <Link to={`/projects/${project.slug}`} className="block">
-        <div className="aspect-video overflow-hidden border-b border-line">
+      <Link to={`/projects/${project.slug}`} className="flex h-full flex-col">
+        <div className="aspect-video shrink-0 overflow-hidden border-b border-line">
           <img
             src={project.images[0]}
             alt={`${project.title} preview`}
@@ -19,7 +19,7 @@ export default function ProjectCard({ project }) {
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </div>
-        <div className="p-5">
+        <div className="flex flex-1 flex-col p-5">
           <div className="mb-2 flex items-start justify-between gap-3">
             <h3 className="font-display text-lg font-bold group-hover:text-accent-soft">
               {project.title}
@@ -30,7 +30,7 @@ export default function ProjectCard({ project }) {
               aria-hidden
             />
           </div>
-          <p className="mb-4 text-sm text-muted">{project.summary}</p>
+          <p className="mb-4 flex-1 text-sm text-muted">{project.summary}</p>
           <div className="flex flex-wrap gap-1.5">
             {project.tech.slice(0, 4).map((t) => (
               <TechBadge key={t} name={t} />

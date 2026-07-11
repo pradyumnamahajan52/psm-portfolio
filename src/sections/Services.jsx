@@ -18,7 +18,7 @@ export default function Services() {
           {services.map((s, i) => {
             const Icon = ICONS[s.icon] || Globe
             return (
-              <ScrollReveal key={s.title} delay={i * 0.08}>
+              <ScrollReveal key={s.title} delay={i * 0.08} className="h-full">
                 <div className="h-full rounded-xl border border-line bg-surface p-6 transition-all hover:border-accent/60 hover:shadow-[0_0_30px_rgba(139,92,246,0.12)]">
                   <span className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-lg bg-accent/15 text-accent">
                     <Icon size={22} aria-hidden />

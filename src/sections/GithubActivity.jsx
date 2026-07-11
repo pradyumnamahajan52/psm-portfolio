@@ -27,7 +27,7 @@ export default function GithubActivity() {
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {top.map((repo, i) => (
-            <ScrollReveal key={repo.name} delay={i * 0.06}>
+            <ScrollReveal key={repo.name} delay={i * 0.06} className="h-full">
               <RepoCard repo={repo} />
             </ScrollReveal>
           ))}

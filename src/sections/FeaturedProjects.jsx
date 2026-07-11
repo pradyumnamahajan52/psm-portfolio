@@ -20,7 +20,7 @@ export default function FeaturedProjects() {
       />
       <div className="grid gap-6 sm:grid-cols-2">
         {featured.map((p, i) => (
-          <ScrollReveal key={p.slug} delay={i * 0.08}>
+          <ScrollReveal key={p.slug} delay={i * 0.08} className="h-full">
             <ProjectCard project={p} />
           </ScrollReveal>
         ))}

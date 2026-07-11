@@ -16,7 +16,7 @@ export default function RepoCard({ repo }) {
       href={repo.html_url}
       target="_blank"
       rel="noreferrer"
-      className="group flex flex-col justify-between rounded-lg border border-line bg-surface p-4 transition-colors hover:border-accent/60"
+      className="group flex h-full flex-col justify-between rounded-lg border border-line bg-surface p-4 transition-colors hover:border-accent/60"
     >
       <div>
         <div className="mb-1.5 flex items-center justify-between gap-2">

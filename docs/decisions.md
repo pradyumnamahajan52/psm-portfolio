@@ -2,6 +2,13 @@
 
 Confirmed decisions with date and reasoning. Add new entries at the top.
 
+## 2026-07-11 — Admin panel UX session
+
+| # | Decision | Choice | Why |
+|---|----------|--------|-----|
+| 12 | Admin editors | **Form-based editors for ALL data files** (no raw JSON required) + **CKEditor 5** for rich-text fields (project description, profile bio). "Edit raw JSON" checkbox kept as an escape hatch. Rich text stored as HTML in the JSON and rendered on the site via a `<Prose>` component (legacy plain strings still render fine). CKEditor is GPL-licensed, dev-only (admin chunk), verified absent from the production bundle. | User explicitly did not want to deal with JSON; wanted list-view + edit UI and rich text. |
+| 13 | Home cards | Equal-height cards in every grid (featured projects, all projects, services, GitHub repos) via `h-full` flex columns; tech badges pinned to card bottom. | User request — cards had uneven heights from varying summary lengths. |
+
 ## 2026-07-11 — Initial planning session
 
 | # | Decision | Choice | Why |

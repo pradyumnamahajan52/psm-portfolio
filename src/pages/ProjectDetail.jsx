@@ -5,6 +5,7 @@ import PageTransition from '../components/PageTransition.jsx'
 import ScrollReveal from '../components/ScrollReveal.jsx'
 import TechBadge from '../components/TechBadge.jsx'
 import GlowButton from '../components/GlowButton.jsx'
+import Prose from '../components/Prose.jsx'
 import NotFound from './NotFound.jsx'
 import usePageTitle from '../hooks/usePageTitle.js'
 
@@ -73,7 +74,7 @@ export default function ProjectDetail() {
 
         <ScrollReveal>
           <h2 className="mb-4 font-display text-xl font-bold">About this project</h2>
-          <p className="mb-10 leading-relaxed text-muted">{project.description}</p>
+          <Prose html={project.description} className="mb-10 leading-relaxed text-muted" />
         </ScrollReveal>
 
         <ScrollReveal>

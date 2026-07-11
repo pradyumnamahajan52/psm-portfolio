@@ -19,7 +19,7 @@ export default function ProjectsPage() {
         />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {sorted.map((p, i) => (
-            <ScrollReveal key={p.slug} delay={(i % 3) * 0.08}>
+            <ScrollReveal key={p.slug} delay={(i % 3) * 0.08} className="h-full">
               <ProjectCard project={p} />
             </ScrollReveal>
           ))}

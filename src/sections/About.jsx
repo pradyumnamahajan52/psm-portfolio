@@ -3,6 +3,7 @@ import profile from '../data/profile.json'
 import SectionHeading from '../components/SectionHeading.jsx'
 import ScrollReveal from '../components/ScrollReveal.jsx'
 import GlowButton from '../components/GlowButton.jsx'
+import Prose from '../components/Prose.jsx'
 
 export default function About() {
   return (
@@ -10,7 +11,7 @@ export default function About() {
       <SectionHeading kicker="About" title="Who I am" />
       <div className="grid gap-10 md:grid-cols-[2fr_1fr]">
         <ScrollReveal>
-          <p className="mb-6 text-lg leading-relaxed text-muted">{profile.bio}</p>
+          <Prose html={profile.bio} className="mb-6 text-lg leading-relaxed text-muted" />
           <div className="flex flex-wrap gap-6 text-sm text-muted">
             <span className="inline-flex items-center gap-2">
               <MapPin size={16} className="text-accent" aria-hidden /> {profile.location}

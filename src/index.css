@@ -69,6 +69,42 @@ body {
   mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, black 40%, transparent 100%);
 }
 
+/* Rich text authored in the admin's CKEditor (see <Prose />) */
+.prose-rich > * + * {
+  margin-top: 0.9em;
+}
+.prose-rich h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--color-text);
+}
+.prose-rich strong {
+  color: var(--color-text);
+}
+.prose-rich a {
+  color: var(--color-accent-soft);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.prose-rich ul,
+.prose-rich ol {
+  padding-left: 1.4em;
+}
+.prose-rich ul {
+  list-style: disc;
+}
+.prose-rich ol {
+  list-style: decimal;
+}
+.prose-rich li + li {
+  margin-top: 0.35em;
+}
+.prose-rich blockquote {
+  border-left: 3px solid var(--color-accent);
+  padding-left: 1em;
+  font-style: italic;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

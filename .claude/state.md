@@ -1,8 +1,26 @@
 # Project State
 
-_Last updated: 2026-07-11 (verification session — build confirmed working, git initialized)_
+_Last updated: 2026-07-11 (admin UX session — form editors + CKEditor + equal cards)_
 
 ## Current status: ALL BUILD PHASES (0–7) COMPLETE and verified. Site is ready to deploy to Hostinger. Waiting only on user-provided content (see "Waiting on user").
+
+## Latest session (admin UX rework — decisions #12–#13)
+
+- Admin panel now has **form editors for every data file** (was raw JSON for all but
+  projects): `ProfileEditor`, `SkillsEditor`, `ExperienceEditor`, `ServicesEditor`
+  (+ existing `ProjectsEditor`), shared primitives in `src/admin/fields.jsx`.
+  List views with Edit/Delete/↑↓ reorder; "Edit raw JSON" checkbox as escape hatch.
+- **CKEditor 5** (`ckeditor5` + `@ckeditor/ckeditor5-react`, licenseKey 'GPL') for
+  project description + profile bio via `src/admin/RichTextField.jsx`; dark theme in
+  `src/admin/admin.css`. HTML stored in JSON; rendered by `src/components/Prose.jsx`
+  (plain legacy strings render unchanged). Verified NOT in production bundle.
+- **Equal-height cards** in all home/projects grids (`h-full` chains in ProjectCard,
+  RepoCard, ScrollReveal wrappers). Measured equal via headless Chromium.
+- Verified end-to-end with Playwright (scratchpad): CKEditor edit → save → JSON on
+  disk → site renders rich HTML; validation probes (empty name, empty skill group,
+  unknown data file) all reject cleanly. Test data restored via git afterwards.
+- Headless-browser gotcha on this WSL box: Playwright Chromium needs libnspr4/libnss3/
+  libasound2t64 — no sudo, so `apt-get download` + `dpkg-deb -x` + `LD_LIBRARY_PATH`.
 
 ## Done
 

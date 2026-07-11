@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { getData, putData, uploadImage } from './adminApi.js'
+import RichTextField from './RichTextField.jsx'
 
 const EMPTY = {
   slug: '',
@@ -171,8 +172,8 @@ export default function ProjectsEditor() {
           <input className={inputCls} value={draft.summary} onChange={(e) => set('summary', e.target.value)} />
         </Field>
 
-        <Field label="Description" hint="full case-study text">
-          <textarea rows={5} className={inputCls} value={draft.description} onChange={(e) => set('description', e.target.value)} />
+        <Field label="Description" hint="full case-study text — supports rich formatting">
+          <RichTextField value={draft.description} onChange={(v) => set('description', v)} />
         </Field>
 
         <Field label="Highlights" hint="one per line">

@@ -1,0 +1,45 @@
+/* Dark-theme overrides so CKEditor matches the admin UI. Dev-only stylesheet. */
+.rich-editor {
+  --ck-color-base-background: #12121a;
+  --ck-color-base-border: #26263a;
+  --ck-color-base-text: #e8e8f0;
+  --ck-color-text: #e8e8f0;
+  --ck-color-toolbar-background: #1a1a28;
+  --ck-color-toolbar-border: #26263a;
+  --ck-color-button-default-background: transparent;
+  --ck-color-button-default-hover-background: #26263a;
+  --ck-color-button-on-background: #26263a;
+  --ck-color-button-on-hover-background: #2e2e46;
+  --ck-color-button-on-color: #a78bfa;
+  --ck-color-dropdown-panel-background: #1a1a28;
+  --ck-color-dropdown-panel-border: #26263a;
+  --ck-color-panel-background: #1a1a28;
+  --ck-color-panel-border: #26263a;
+  --ck-color-list-background: #1a1a28;
+  --ck-color-list-button-hover-background: #26263a;
+  --ck-color-list-button-on-background: #8b5cf6;
+  --ck-color-list-button-on-background-focus: #8b5cf6;
+  --ck-color-input-background: #12121a;
+  --ck-color-input-border: #26263a;
+  --ck-color-input-text: #e8e8f0;
+  --ck-color-focus-border: #8b5cf6;
+  --ck-focus-outer-shadow: 0 0 0 3px rgba(139, 92, 246, 0.25);
+  --ck-color-widget-blurred-border: #26263a;
+  --ck-color-tooltip-background: #26263a;
+  --ck-color-tooltip-text: #e8e8f0;
+}
+
+.rich-editor .ck.ck-editor__main > .ck-editor__editable {
+  min-height: 10rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.rich-editor .ck.ck-toolbar {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.rich-editor .ck-editor__editable a {
+  color: #a78bfa;
+}

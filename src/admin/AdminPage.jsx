@@ -1,11 +1,22 @@
 import { useEffect, useState } from 'react'
 import { getData, putData } from './adminApi.js'
 import ProjectsEditor from './ProjectsEditor.jsx'
+import ProfileEditor from './ProfileEditor.jsx'
+import SkillsEditor from './SkillsEditor.jsx'
+import ExperienceEditor from './ExperienceEditor.jsx'
+import ServicesEditor from './ServicesEditor.jsx'
 import usePageTitle from '../hooks/usePageTitle.js'
 
-const TABS = ['projects', 'profile', 'skills', 'experience', 'services']
+const TABS = {
+  projects: ProjectsEditor,
+  profile: ProfileEditor,
+  skills: SkillsEditor,
+  experience: ExperienceEditor,
+  services: ServicesEditor,
+}
 
-// Raw JSON editor used for every data file except projects (which gets real forms).
+// Escape hatch: raw JSON editing for any data file, for the rare case the
+// forms don't cover something.
 function JsonEditor({ name }) {
   const [text, setText] = useState('')
   const [status, setStatus] = useState('')
@@ -58,6 +69,9 @@ function JsonEditor({ name }) {
 export default function AdminPage() {
   usePageTitle('Admin')
   const [tab, setTab] = useState('projects')
+  const [rawJson, setRawJson] = useState(false)
+
+  const Editor = TABS[tab]
 
   return (
     <div className="mx-auto max-w-5xl px-4 pb-24 pt-24 sm:px-6">
@@ -73,11 +87,14 @@ export default function AdminPage() {
         <code className="text-accent-soft">npm run build</code> and re-upload to publish.
       </p>
 
-      <div className="mb-8 flex flex-wrap gap-2 border-b border-line pb-4">
-        {TABS.map((t) => (
+      <div className="mb-8 flex flex-wrap items-center gap-2 border-b border-line pb-4">
+        {Object.keys(TABS).map((t) => (
           <button
             key={t}
-            onClick={() => setTab(t)}
+            onClick={() => {
+              setTab(t)
+              setRawJson(false)
+            }}
             className={`rounded-lg px-4 py-2 text-sm capitalize transition-colors ${
               tab === t ? 'bg-accent text-white' : 'bg-surface text-muted hover:text-text'
             }`}
@@ -85,9 +102,18 @@ export default function AdminPage() {
             {t}
           </button>
         ))}
+        <label className="ml-auto inline-flex cursor-pointer items-center gap-2 text-xs text-muted">
+          <input
+            type="checkbox"
+            checked={rawJson}
+            onChange={(e) => setRawJson(e.target.checked)}
+            className="accent-[#8b5cf6]"
+          />
+          Edit raw JSON
+        </label>
       </div>
 
-      {tab === 'projects' ? <ProjectsEditor /> : <JsonEditor name={tab} />}
+      {rawJson ? <JsonEditor name={tab} /> : <Editor />}
     </div>
   )
 }
