@@ -2,6 +2,13 @@
 
 Confirmed decisions with date and reasoning. Add new entries at the top.
 
+## 2026-07-12 — GitHub push session
+
+| # | Decision | Choice | Why |
+|---|----------|--------|-----|
+| 14 | GitHub repo | Public repo `pradyumnamahajan52/psm-portfolio`, pushed 2026-07-12. | User chose public visibility when asked. |
+| 15 | netlify.toml | **Removed from the repo for now** — Hostinger is the only deployment target. Exact file contents preserved in `docs/deployment.md` for one-minute recreation when/if migrating to Netlify. | User request ("don't add netlify.toml, I will host on Hostinger"). Supersedes the "both configs live in the repo permanently" note from decision #7. |
+
 ## 2026-07-11 — Admin panel UX session
 
 | # | Decision | Choice | Why |

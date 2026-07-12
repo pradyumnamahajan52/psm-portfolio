@@ -23,7 +23,7 @@ Two ways:
    The admin exists **only in dev** — none of it ships in the production build.
 2. **By hand:** edit `src/data/*.json` directly. See `docs/content-guide.md`.
 
-After editing: `npm run build` and re-upload `dist/` (Hostinger) — or `git push` (Netlify).
+After editing: `npm run build` and re-upload the contents of `dist/` to Hostinger.
 
 ## Deployment
 
@@ -31,7 +31,8 @@ Full step-by-step guide in [`docs/deployment.md`](docs/deployment.md).
 
 - **Hostinger (current):** upload the *contents* of `dist/` to `public_html/`.
   The included `.htaccess` handles SPA deep links. Enable "show hidden files" to verify it uploaded.
-- **Netlify (future):** push to GitHub → import on Netlify → `netlify.toml` does the rest.
+- **Netlify (optional, later):** recreate `netlify.toml` (contents in `docs/deployment.md`),
+  then import the repo on Netlify.
 
 ## Project docs & session memory
 

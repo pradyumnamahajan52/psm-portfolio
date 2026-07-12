@@ -63,7 +63,8 @@ _Last updated: 2026-07-12 (pushed to GitHub)_
   `.claude/responses/2026-07-11-planning.md` and `docs/plan.md` (unchanged, still accurate).
 - Content edits happen ONLY in `src/data/*.json` (by hand or via `/admin` in dev).
 - Publish flow: `npm run build` → upload `dist/` contents to Hostinger `public_html`
-  (keep `.htaccess`). Later: push to GitHub → Netlify import (netlify.toml ready).
+  (keep `.htaccess`). `netlify.toml` was REMOVED 2026-07-12 (user hosts on Hostinger
+  only) — contents preserved in `docs/deployment.md` for later Netlify migration.
 
 ## In progress
 
@@ -78,7 +79,8 @@ _Last updated: 2026-07-12 (pushed to GitHub)_
 3. **Deploy to Hostinger** following `docs/deployment.md` / README.
 4. Replace placeholder SVG covers with real screenshots (via `/admin` upload or manually
    into `public/projects/<slug>/`).
-5. ~~Push to GitHub~~ done 2026-07-12. Optional later: Netlify migration; Decap CMS upgrade.
+5. ~~Push to GitHub~~ done 2026-07-12. Optional later: Netlify migration (recreate
+   netlify.toml per docs/deployment.md — removed at user request); Decap CMS upgrade.
 
 ## Waiting on user (non-blocking for deploy, needed before launch)
 

@@ -34,9 +34,9 @@ RewriteRule . /index.html [L]
 
 ## Netlify free tier (future migration — zero code changes)
 
-1. Push the repo to GitHub (private or public).
-2. On https://app.netlify.com → **Add new site → Import an existing project** → pick the repo.
-3. Netlify reads `netlify.toml` automatically:
+1. ~~Push the repo to GitHub~~ — done 2026-07-12: https://github.com/pradyumnamahajan52/psm-portfolio
+2. Recreate `netlify.toml` at the repo root (removed 2026-07-12 while Hostinger is the
+   only target — decision #15) with exactly this content, commit and push:
 
 ```toml
 [build]
@@ -49,6 +49,8 @@ RewriteRule . /index.html [L]
   status = 200
 ```
 
+3. On https://app.netlify.com → **Add new site → Import an existing project** → pick the
+   repo. Netlify reads `netlify.toml` automatically.
 4. Deploy. Every future `git push` auto-deploys.
 5. Point the domain: in Netlify → Domain settings → add custom domain, then at the domain
    registrar change the A/CNAME records (or switch nameservers to Netlify DNS).
@@ -56,7 +58,8 @@ RewriteRule . /index.html [L]
 
 ## Notes
 
-- `.htaccess` is ignored by Netlify and `netlify.toml` is ignored by Apache — both can
-  live in the repo permanently; each host uses its own.
+- `.htaccess` only matters on Hostinger (Apache). `netlify.toml` only matters on Netlify —
+  it is currently NOT in the repo (user decision, 2026-07-12); recreate it from step 2
+  above when migrating.
 - No environment variables or server functions are used anywhere, which is what keeps
   this migration path trivial.

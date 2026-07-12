@@ -25,5 +25,11 @@
 - Resume PDF is tracked twice by design-ish: `public/resume/` (served by site) and a
   working copy at repo root. Both are now public — harmless since the site serves the
   resume publicly anyway, but the root copy could be untracked later if desired.
-- Netlify migration path is now unblocked (push → import → `netlify.toml`).
 - This summary + state.md update were committed and pushed after the initial push.
+
+## Follow-up (same day): netlify.toml removed
+
+User: "for now don't add netlify.toml, I will host on Hostinger." Removed the file from
+the repo (decision #15). Its exact contents are preserved verbatim in
+`docs/deployment.md` (Netlify section, step 2) so migration later is copy-paste.
+README, deployment guide, decisions log, and state.md all updated to match.
