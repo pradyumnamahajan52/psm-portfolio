@@ -1,10 +1,25 @@
 # Project State
 
-_Last updated: 2026-07-12 (pushed to GitHub)_
+_Last updated: 2026-07-12 (CI/CD workflow + coding-vibe restyle, branch `claude/new-session-qd6ag2`)_
 
-## Current status: ALL BUILD PHASES (0–7) COMPLETE and verified. Code is on GitHub: https://github.com/pradyumnamahajan52/psm-portfolio (public). Site is ready to deploy to Hostinger. Waiting only on user-provided content (see "Waiting on user").
+## Current status: ALL BUILD PHASES (0–7) COMPLETE and verified. Code is on GitHub: https://github.com/pradyumnamahajan52/psm-portfolio (public). Site is ready to deploy to Hostinger — now with an auto-deploy GitHub Actions workflow (needs SSH secrets configured). Waiting only on user-provided content (see "Waiting on user").
 
-## Latest session (admin UX rework — decisions #12–#13)
+## Latest session (CI/CD + coding vibe — decisions #16–#17, on branch `claude/new-session-qd6ag2`)
+
+- **`.github/workflows/deploy.yml`**: push to `main` → build → rsync `dist/` to
+  Hostinger over SSH. Needs repo secrets `SSH_PRIVATE_KEY`, `SSH_HOST`, `SSH_PORT`,
+  `SSH_USER`, `DEPLOY_PATH` (documented in the file header). Manual dispatch enabled.
+- **Coding-vibe layer**: JetBrains Mono accents, `// kicker` section headings +
+  accent dot on titles, hero mock terminal (lg+), scroll-progress bar,
+  scroll-linked parallax (hero copy/orb, About card via `Parallax.jsx`, floating
+  code tokens via `CodeDrift.jsx` in hero + skills), pulsing "open to work"
+  navbar pill, server-style footer status strip. All honor reduced motion.
+- New dep: `@fontsource/jetbrains-mono`. Bundle now 409 kB JS / 137 kB gzip.
+- Verified headlessly (screenshots + numeric parallax/progress checks); recipe
+  saved to `.claude/skills/verify/SKILL.md`. Details in
+  `.claude/responses/2026-07-12-cicd-coding-vibe.md`.
+
+## Previous session (admin UX rework — decisions #12–#13)
 
 - Admin panel now has **form editors for every data file** (was raw JSON for all but
   projects): `ProfileEditor`, `SkillsEditor`, `ExperienceEditor`, `ServicesEditor`

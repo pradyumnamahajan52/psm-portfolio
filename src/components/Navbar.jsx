@@ -37,6 +37,16 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
+          <span
+            className="inline-flex items-center gap-2 rounded-full border border-line bg-surface/60 px-3 py-1 font-mono text-xs text-muted"
+            title="Open to freelance & full-time work"
+          >
+            <span className="relative flex h-2 w-2" aria-hidden>
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
+            </span>
+            open to work
+          </span>
           <a
             href={profile.resumeUrl}
             download

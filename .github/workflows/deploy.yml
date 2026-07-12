@@ -1,0 +1,60 @@
+# Deploy the built site (dist/) to Hostinger over SSH + rsync.
+#
+# Required repository secrets (Settings → Secrets and variables → Actions):
+#   SSH_PRIVATE_KEY  – private key whose public half is in Hostinger's SSH keys
+#   SSH_HOST         – Hostinger SSH host (e.g. 123.45.67.89 or srvXXX.hstgr.io)
+#   SSH_PORT         – Hostinger SSH port (usually 65002 on shared hosting)
+#   SSH_USER         – Hostinger SSH username (e.g. u123456789)
+#   DEPLOY_PATH      – absolute path to the web root (e.g. /home/u123456789/domains/example.com/public_html)
+#
+# Notes:
+#   - The site is a Vite app at the repo root, so we build first and sync dist/
+#     (which already contains .htaccess for the SPA rewrite).
+#   - --delete keeps the server exactly in sync with dist/; the --exclude list
+#     protects server-side folders (if any) from being deleted.
+
+name: Deploy to Hostinger
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # allow manual runs from the Actions tab
+
+jobs:
+  deploy-frontend:
+    name: Build & Deploy Frontend (dist/)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p ${{ secrets.SSH_PORT }} -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Sync built site
+        run: |
+          rsync -avz --delete \
+            --exclude 'api/' \
+            --exclude 'storage/' \
+            --exclude '.git/' \
+            --exclude '.well-known/' \
+            -e "ssh -i ~/.ssh/deploy_key -p ${{ secrets.SSH_PORT }}" \
+            dist/ \
+            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.DEPLOY_PATH }}/
