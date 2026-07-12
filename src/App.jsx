@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
+import ScrollProgress from './components/ScrollProgress.jsx'
 import Home from './pages/Home.jsx'
 import ProjectsPage from './pages/ProjectsPage.jsx'
 import ProjectDetail from './pages/ProjectDetail.jsx'
@@ -35,6 +36,7 @@ export default function App() {
     <div className="flex min-h-screen flex-col">
       <ScrollManager />
       <Navbar />
+      <ScrollProgress />
       <main className="flex-1">
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>

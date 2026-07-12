@@ -2,6 +2,13 @@
 
 Confirmed decisions with date and reasoning. Add new entries at the top.
 
+## 2026-07-12 — CI/CD + coding-vibe session
+
+| # | Decision | Choice | Why |
+|---|----------|--------|-----|
+| 16 | Deployment automation | **GitHub Actions workflow** `.github/workflows/deploy.yml`: push to `main` → `npm ci` → `npm run build` → rsync `dist/` to Hostinger over SSH. Secrets required: `SSH_PRIVATE_KEY`, `SSH_HOST`, `SSH_PORT`, `SSH_USER`, `DEPLOY_PATH`. `--delete` keeps server in sync; `api/`, `storage/`, `.git/`, `.well-known/` excluded from deletion. Manual `workflow_dispatch` enabled. | User supplied an example rsync workflow and asked for the same adapted to this repo (Vite app at root → deploy `dist/`, not a `frontend/` folder). |
+| 17 | "Coding vibe" design layer | JetBrains Mono accents (`--font-mono`), `//`-comment section kickers + accent dot after titles, mock terminal window in hero (lg+ only), scroll-progress bar under navbar, scroll-linked parallax (hero copy/orb, About quick-facts card, CodeDrift floating code tokens in hero + skills), pulsing "open to work" pill in navbar, server-style status bar in footer. All motion honors `prefers-reduced-motion`. | User asked for more coding-developer personality and animations that move with scroll for a "live" feel. |
+
 ## 2026-07-12 — GitHub push session
 
 | # | Decision | Choice | Why |

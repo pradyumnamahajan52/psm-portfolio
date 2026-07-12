@@ -2,11 +2,13 @@ import skills from '../data/skills.json'
 import SectionHeading from '../components/SectionHeading.jsx'
 import ScrollReveal from '../components/ScrollReveal.jsx'
 import TechBadge from '../components/TechBadge.jsx'
+import CodeDrift from '../components/CodeDrift.jsx'
 
 export default function Skills() {
   return (
-    <section id="skills" className="scroll-mt-20 bg-surface/30 py-24">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+    <section id="skills" className="relative scroll-mt-20 overflow-hidden bg-surface/30 py-24">
+      <CodeDrift />
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <SectionHeading
           kicker="Skills"
           title="Technologies I work with"
