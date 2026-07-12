@@ -1,8 +1,8 @@
 # Project State
 
-_Last updated: 2026-07-11 (admin UX session — form editors + CKEditor + equal cards)_
+_Last updated: 2026-07-12 (pushed to GitHub)_
 
-## Current status: ALL BUILD PHASES (0–7) COMPLETE and verified. Site is ready to deploy to Hostinger. Waiting only on user-provided content (see "Waiting on user").
+## Current status: ALL BUILD PHASES (0–7) COMPLETE and verified. Code is on GitHub: https://github.com/pradyumnamahajan52/psm-portfolio (public). Site is ready to deploy to Hostinger. Waiting only on user-provided content (see "Waiting on user").
 
 ## Latest session (admin UX rework — decisions #12–#13)
 
@@ -52,6 +52,10 @@ _Last updated: 2026-07-11 (admin UX session — form editors + CKEditor + equal 
       and rejects unknown data files.
 - [x] **git initialized** (branch `main`), initial commit `6e553bd` with everything.
       `.gitignore` also excludes WSL `*Zone.Identifier` / `*SandBoxSafeFile` artifacts.
+- [x] **Pushed to GitHub 2026-07-12:** public repo
+      `https://github.com/pradyumnamahajan52/psm-portfolio`, `origin/main` tracking set.
+      Created via `gh repo create` (user chose public visibility). README + .gitignore
+      already existed and were pushed as-is. Netlify import is now unblocked.
 
 ## Key knowledge (reuse, don't re-derive)
 
@@ -74,7 +78,7 @@ _Last updated: 2026-07-11 (admin UX session — form editors + CKEditor + equal 
 3. **Deploy to Hostinger** following `docs/deployment.md` / README.
 4. Replace placeholder SVG covers with real screenshots (via `/admin` upload or manually
    into `public/projects/<slug>/`).
-5. Optional later: push to GitHub + Netlify migration; Decap CMS upgrade.
+5. ~~Push to GitHub~~ done 2026-07-12. Optional later: Netlify migration; Decap CMS upgrade.
 
 ## Waiting on user (non-blocking for deploy, needed before launch)
 
