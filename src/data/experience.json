@@ -1,26 +1,41 @@
 [
   {
     "type": "work",
+    "title": "Drone Monitoring & Control Dashboard",
+    "org": "IIT Roorkee — Freelance",
+    "location": "Remote",
+    "period": "Jul 2026 — Present",
+    "points": [
+      "Built a dashboard with a React.js frontend and Django backend for monitoring and controlling field drones.",
+      "Integrated The Things Network (TTN) with LoRaWAN gateways to stream live telemetry and issue commands.",
+      "Containerised with Docker and deployed to AWS EC2 with automated build and release pipelines using GitHub Actions."
+    ]
+  },
+  {
+    "type": "work",
+    "title": "Web Platform",
+    "org": "IBN Group — Freelance",
+    "location": "Remote",
+    "period": "Mar 2026 — Present",
+    "points": [
+      "Developed and deployed responsive web applications using Next.js on the frontend and PHP with Laravel on the backend.",
+      "Deployed to Hostinger shared hosting with GitHub Actions CI/CD.",
+      "Handled the work end to end, from design through production deployment."
+    ]
+  },
+  {
+    "type": "work",
     "title": "Associate Software Developer",
     "org": "DeccanLogic",
     "location": "Pune, India",
     "period": "Mar 2025 — Present",
     "points": [
-      "Developing responsive frontends with React.js and React Native across web and mobile.",
-      "Implementing component-driven architecture with reusable UI components.",
-      "Optimizing performance with lazy loading, code splitting and Redux state management."
-    ]
-  },
-  {
-    "type": "work",
-    "title": "Freelance Full-Stack Developer",
-    "org": "Self-employed",
-    "location": "Remote",
-    "period": "2020 — Present",
-    "points": [
-      "Built websites and Android apps for clients using React, React Native and Django.",
-      "Launched myntome.com, an online footwear store, and operated it end to end.",
-      "Integrated payment gateways (Razorpay) and deployed on budget hosting."
+      "Core developer on a cross-platform investor application, building the React Native app from project start through to Play Store release on Android and TestFlight distribution on iOS.",
+      "Built a shared web and native codebase where business logic, state, and API layers stay common, with platform-specific view and routing layers so both apps behave consistently without duplicating code.",
+      "Created the native component library from scratch over React Native Paper, matching the existing MUI-based web components so developers use the same interface on either platform.",
+      "Replaced a paid icon library dependency with a custom SVG-based icon system that renders on both web and native from a single source.",
+      "Developed portfolio and fund analytics features on the advisory platform — allocation breakdowns, NAV trends, performance charts, and fund comparison across mutual fund, SIP, and capital gains workflows.",
+      "Optimised frontend performance with lazy loading, reduced re-renders, and elimination of duplicate API calls."
     ]
   },
   {
@@ -34,9 +49,19 @@
   {
     "type": "education",
     "title": "BTech in Information Technology",
-    "org": "Government Engineering College, Aurangabad",
+    "org": "Government College of Engineering, Aurangabad",
     "location": "Aurangabad, India",
-    "period": "2018 — 2022",
+    "period": "Aug 2018 — Jun 2022",
     "points": ["Scored 69.89%"]
+  },
+  {
+    "type": "work",
+    "title": "Co-founder — myntome.com",
+    "org": "Self-employed",
+    "location": "Remote",
+    "period": "Aug 2020 — Jan 2021",
+    "points": [
+      "Co-founded and launched an online footwear e-commerce store, independently built and deployed."
+    ]
   }
 ]

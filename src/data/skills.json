@@ -1,26 +1,30 @@
 [
   {
     "group": "Languages",
-    "items": ["Python", "JavaScript", "Java", "C", "C++"]
+    "items": ["JavaScript", "TypeScript", "Python", "Java", "PHP"]
+  },
+  {
+    "group": "Mobile",
+    "items": ["React Native", "React Navigation", "React Native Paper", "Redux", "Play Store", "TestFlight"]
   },
   {
     "group": "Frontend",
-    "items": ["React.js", "React Native", "Redux", "HTML", "CSS", "Tailwind CSS", "Bootstrap"]
+    "items": ["React.js", "Next.js", "Redux", "Material UI (MUI)", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap"]
   },
   {
     "group": "Backend",
-    "items": ["Django", "Spring Boot", "Flask", "REST APIs", "JWT"]
+    "items": ["Django", "Django REST Framework", "Laravel", "Spring Boot", "REST APIs", "JWT Authentication"]
   },
   {
     "group": "Database & Cloud",
-    "items": ["MySQL", "AWS", "Docker"]
+    "items": ["MySQL", "AWS (EC2, S3)", "Docker", "Hostinger"]
   },
   {
     "group": "Tools & Platforms",
-    "items": ["Git", "Linux", "Electron.js", "Vite"]
+    "items": ["Git", "GitHub", "GitHub Actions (CI/CD)", "Linux", "Postman", "Vite", "Google Apps Script"]
   },
   {
     "group": "Concepts",
-    "items": ["OOP", "Data Structures & Algorithms", "Microservices"]
+    "items": ["OOP", "Component-Driven Architecture", "Cross-Platform Development", "Agile (Scrum)"]
   }
 ]

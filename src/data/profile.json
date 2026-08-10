@@ -4,13 +4,13 @@
   "role": "Full Stack Developer",
   "roles": [
     "Full Stack Developer",
-    "React & React Native Developer",
-    "Freelance Web Developer",
-    "Backend Developer (Django / Spring Boot)"
+    "React Native Developer",
+    "React.js Developer",
+    "Freelance Web Developer"
   ],
-  "tagline": "I build fast, modern web and mobile apps — from pixel-perfect frontends to secure, scalable backends.",
-  "bio": "I'm a full stack developer at DeccanLogic, Pune, where I build responsive web and mobile interfaces with React.js and React Native. Alongside my full-time role, I take on freelance projects — I've shipped e-commerce stores, desktop apps, and Android apps end to end. My backend toolkit spans Django, Spring Boot and Flask, and I care about performance: lazy loading, code splitting, and clean component architecture are my defaults, not afterthoughts.",
-  "location": "Pune / Latur, Maharashtra, India",
+  "tagline": "I build production web and mobile apps — from cross-platform React Native releases to Django and Laravel backends.",
+  "bio": "I'm a full stack developer at DeccanLogic, Pune, where I'm a core developer on a cross-platform investor application — I built the React Native app from project start through to Play Store and TestFlight release, on a shared codebase with the web product. Alongside my full-time role I take on freelance work: a drone monitoring and control dashboard for IIT Roorkee using React.js, Django and LoRaWAN, and web platforms for IBN Group with Next.js and Laravel. I care about performance and architecture — lazy loading, render optimisation, and reusable component libraries are defaults for me, not afterthoughts.",
+  "location": "Pune, Maharashtra, India",
   "email": "pradyumnamahajan52@gmail.com",
   "githubUsername": "pradyumnamahajan52",
   "social": {
@@ -19,11 +19,11 @@
     "twitter": "https://twitter.com/pradyumna_52"
   },
   "googleFormUrl": "",
-  "resumeUrl": "/resume/Pradyumna_Mahajan_Resume.pdf",
+  "resumeUrl": "/resume/Pradyumna_Mahajan_Resume_8975139952.pdf",
   "openTo": ["Freelance projects", "Full-time opportunities"],
   "stats": [
-    { "value": "3+", "label": "Years building software" },
-    { "value": "10+", "label": "Projects shipped" },
-    { "value": "2", "label": "Live products launched" }
+    { "value": "1.5+", "label": "Years of professional experience" },
+    { "value": "2", "label": "Active freelance clients" },
+    { "value": "2", "label": "Products shipped to production" }
   ]
 }
